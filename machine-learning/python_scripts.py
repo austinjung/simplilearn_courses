@@ -31,6 +31,7 @@ grammar = CFG.fromstring(
         Det -> 'the' | 'my' | 'a'
         N -> 'dog' | 'cookie' | 'table' | 'cake' | 'fork'
         ADV1 -> 'very'
+        ADV2 -> 'carefully'
         ADJ -> 'beautiful'
         V3 -> 'ate' | 'saw'
         P -> 'on' | 'under' | 'with'
@@ -39,7 +40,8 @@ grammar = CFG.fromstring(
 )
 
 # sent = "John ate the cake on the table with a fork"
-sent = "John saw a very beautiful dog on the table"
+# sent = "John saw a very beautiful dog on the table"
+sent = "John saw a very beautiful dog carefully"
 tokens = list(sent.split())
 # tokens = ['John', 'ate', 'the', 'cake', 'on', 'the table', 'with', 'a', 'fork']
 
